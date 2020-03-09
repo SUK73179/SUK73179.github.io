@@ -1,0 +1,50 @@
+.line{
+	border-style: solid;
+	border-width: 4px;
+}
+.icon-weapon{
+	width: 25px;
+}
+.icon-class{
+	width: 32px;
+}
+.icon-class2{
+	width: 23px;
+}
+.classname{
+	font-size: 18px;
+	padding-right: 2px;
+}
+.classname2{
+	font-size: 14px;
+	padding-right: 2px;
+}
+.skillname{
+	font-size: 15px;
+}
+.skillname2{
+	font-size: 13px;
+}
+.arrow-right{
+	width: 140%;
+	margin-top: 10%;
+	margin-left: -20%;
+}
+.female{
+	color: #e75480;
+}
+.male{
+	color: #0000EE;
+}
+
+.mgt28{margin-top: 28%;} .mgt18{margin-top: 18%;} .mgt22{margin-top: 22%;}
+.mgt40{margin-top: 40%;} .mgt60{margin-top: 60%;}
+.col-sm-58{
+	-ms-flex:0 0 48.6%;flex:0 0 48.6%;max-width:48.6%;
+	position:relative;width:100%;padding-right:15px;padding-left:15px;
+}
+.col-sm-04{
+	-ms-flex:0 0 2%;flex:0 0 2%;max-width:2%;
+	position:relative;width:100%;padding-right:15px;padding-left:15px;
+}
+
