@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fire emblem Awakening</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="main.js"></script>
+	<!--<link rel="stylesheet" href="fonts/css/all.css">-->
+</head>
+<body>
+	<div class="container mb-5">
+	<div class="row">
+	<div class="col-sm-58">
+		<div class="row mt-5">
+			<div class="col-sm-5 line py-2">
+				<div class="classname clearfix">
+					<image class="float-left icon-class" src="icon/class/Lord.gif">
+					<b>Lord</b></image>
+					<image class="float-right icon-weapon" src="icon/weapons/Sword.png">
+				</div>											
+				<div class="clearfix skillname">
+					<image src="icon/skills/dualstrike+.png" data-toggle="tooltip" 
+					data-placement="top" title="Tăng 10% tỉ lệ tấn công của người hỗ trợ khi đánh đôi (tính theo chỉ số skill)"> Dual Strike+,
+					<image src="icon/skills/charm.png" data-toggle="tooltip"
+					data-placement="top" title="Hit rate và Avoid +5 cho các đồng minh trong 3 ô"> Charm
+				</div>				
+			</div>		
+			<div class="col-sm-2">
+				<image src="characters/arrowright.png" class="arrow-right mgt40">
+			</div>
+			<div class="col-sm-5 line py-2">
+				<div class="classname clearfix">
+					<image class="float-left icon-class" src="icon/class/Greatlord.gif">
+					<b>Great Lord</b></image>
+					<image class="float-right icon-weapon" src="icon/weapons/Lance.png">
+					<span class="float-right">&nbsp</span>
+					<image class="float-right icon-weapon" src="icon/weapons/Sword.png">
+				</div>											
+				<div class="clearfix skillname">
+					<image src="icon/skills/Aether.png" data-toggle="tooltip" 
+					data-placement="top" title="Tấn công 2 lần, lần 1 sol, lần 2 luna. Tỉ lệ: (skill/2)%"> Aether,
+					<image src="icon/skills/RightfulKing.png" data-toggle="tooltip" 
+					data-placement="top" title="Tăng 10% tỉ lệ kích hoạt các skill"> Rightful King
+				</div>
+			</div>
+		</div><!-- class Lord -->
+		<div class="row mt-5">
+			<div class="col-sm-5 px-0 female">
+				<div class="mgt28 line py-2 px-2">
+					<div class="classname clearfix">
+						<image class="float-left icon-class" src="icon/class/PegasusKnight.gif">
+						<b>Pegasus Knight</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Lance.png">
+					</div>											
+					<div class="clearfix skillname">
+						<image src="icon/skills/speed+2.webp" data-toggle="tooltip" 
+					data-placement="top" title="Chỉ số speed +2"> Speed +2,
+						<image src="icon/skills/relief.png" data-toggle="tooltip" 
+					data-placement="top" title="Hồi 20% máu khi bắt đầu lượt người chơi nếu không có bất kì ai đứng gần trong 3 ô"> Relief
+					</div>	
+				</div>			
+			</div>
+			<div class="col-sm-2">
+				<image src="characters/arrowupright.png" class="arrow-right mgt60">
+				<image src="characters/arrowdownright.png" class="arrow-right mt-0">
+			</div>
+			<div class="col-sm-5 px-0 female">
+				<div class="line py-2 px-2">
+					<div class="classname clearfix">
+						<image class="float-left icon-class" src="icon/class/Darkflier.gif">
+						<b>Dark Flier</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Tome.webp">
+						<span class="float-right">&nbsp</span>
+						<image class="float-right icon-weapon" src="icon/weapons/Lance.png">
+					</div>											
+					<div class="clearfix skillname2">
+						<image src="icon/skills/buffmove.webp" data-toggle="tooltip" 
+					data-placement="top" title="Ra lệnh: Tăng 1 bước di chuyển cho các đồng minh trong 3 ô"> Rally Movement,
+						<image src="icon/skills/Galeforce.png" id="Galeforce"
+					title=""> Galeforce
+					</div>
+				</div>
+				<div class="line py-2 px-2 mt-5">
+					<div class="classname clearfix">
+						<image class="float-left icon-class" src="icon/class/FalconKnight.gif">
+						<b>Falcon Knight</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Staff.png">
+						<span class="float-right">&nbsp</span>
+						<image class="float-right icon-weapon" src="icon/weapons/Lance.png">
+					</div>											
+					<div class="clearfix skillname">
+						<image src="icon/skills/buffspeed.png" data-toggle="tooltip" 
+					data-placement="top" title="Ra lệnh: Tăng speed +4 cho các đồng minh trong 3 ô"> Rally Speed,
+						<image src="icon/skills/Lancefaire.png" data-toggle="tooltip" 
+					data-placement="top" title="Strength +5 khi dùng giáo."> Lancefaire
+					</div>
+				</div>
+			</div>
+		</div><!-- class Pegasus Knight -->
+		<div class="row mt-5">
+			<div class="col-sm-5 px-0">
+				<div class="mgt28 line py-2 px-2">
+					<div class="classname clearfix">
+						<image class="float-left icon-class" src="icon/class/Cavalier.gif">
+						<b>Cavalier</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Lance.png">
+						<span class="float-right">&nbsp</span>
+						<image class="float-right icon-weapon" src="icon/weapons/Sword.png">
+					</div>											
+					<div class="clearfix skillname2">
+						<image src="icon/skills/Discipline.png" data-toggle="tooltip" data-placement="top" title="x2 kinh nghiệm của vũ khí"> Discipline,
+						<image src="icon/skills/OutdoorFighter.png" data-toggle="tooltip" data-placement="top" title="Hit rate và Avoid +10 khi chiến đấu ngoài trời">Outdoor Fighter
+					</div>	
+				</div>
+				<div class="mgt22 line py-2 px-2">
+					<div class="classname clearfix">
+						<image class="float-left icon-class" src="icon/class/Knight.gif">
+						<b>Knight</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Lance.png">
+					</div>										
+					<div class="clearfix skillname2">
+						<image src="icon/skills/Defense+2.png" data-toggle="tooltip" data-placement="top" title=" Chỉ số def +2"> Defense +2,
+						<image src="icon/skills/IndoorFighter.png" data-toggle="tooltip" data-placement="top" title="Hit rate và Avoid +10 khi chiến đấu trong nhà">Indoor Fighter
+					</div>	
+				</div>			
+			</div>
+			<div class="col-sm-2">
+				<image src="characters/arrowupright.png" class="arrow-right mgt60">
+				<image src="characters/arrowdownright.png" class="arrow-right mt-0">
+				<image src="characters/arrowupright.png" class="arrow-right mt-0">
+				<image src="characters/arrowdownright.png" class="arrow-right mt-0">
+			</div>
+			<div class="col-sm-5 px-0">	
+				<div class="line py-2 px-2">
+					<div class="classname clearfix">
+						<image class="float-left icon-class" src="icon/class/Paladin.gif">
+						<b>Paladin</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Lance.png">
+						<span class="float-right">&nbsp</span>
+						<image class="float-right icon-weapon" src="icon/weapons/Sword.png">
+					</div>											
+					<div class="clearfix">
+						<image src="icon/skills/Defender.png" data-toggle="tooltip" data-placement="top" title="Tất cả chỉ số (trừ movement) +1 khi pair up"> Defender,
+						<image src="icon/skills/Aegis.png" data-toggle="tooltip" data-placement="top" title="Giảm nửa sát thương từ cung, phép và dragonstones. Tỉ lệ: Skill%"> Aegis
+					</div>
+				</div>
+				<div class="line py-2 px-2 mt-5">
+					<div class="classname2 clearfix">
+						<image class="float-left icon-class" src="icon/class/GreatKnight.gif">
+						<b>Great Knight</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Axe.webp">
+						<span class="float-right">&nbsp</span>
+						<image class="float-right icon-weapon" src="icon/weapons/Lance.png">
+						<span class="float-right">&nbsp</span>
+						<image class="float-right icon-weapon" src="icon/weapons/Sword.png">
+					</div>											
+					<div class="clearfix">
+						<image src="icon/skills/Luna.png" data-toggle="tooltip" data-placement="top" title="Giảm nữa giáp hoặc kháng phép đối phương. Tỉ lệ: Skill%"> Luna,
+						<image src="icon/skills/DualGuard+.png" data-toggle="tooltip" data-placement="top" title="Tăng 10% tỉ lệ đỡ đòn của người hỗ trợ khi đánh đôi (tính theo chỉ số def hoặc res)"> Dual Guard+
+					</div>
+				</div>
+				<div class="line py-2 px-2 mt-5">
+					<div class="classname clearfix">
+						<image class="float-left icon-class" src="icon/class/General.gif">
+						<b>General</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Lance.png">
+						<span class="float-right">&nbsp</span>
+						<image class="float-right icon-weapon" src="icon/weapons/Axe.webp">
+					</div>											
+					<div class="clearfix">
+						<image src="icon/skills/buffdef.png" data-toggle="tooltip" data-placement="top" title="Ra lệnh: Tăng def +4 cho các đồng minh trong 3 ô"> Rally defense,
+						<image src="icon/skills/Pavise.png" data-toggle="tooltip" data-placement="top" title="Giảm nửa sát thương từ kiếm, búa, giáo và beaststones. Tỉ lệ: Skill%"> Pavise
+					</div>
+				</div>
+			</div>
+		</div><!-- class 3 nhanh -->
+		<div class="row mt-5">
+			<div class="col-sm-5 px-0">
+				<div class="mgt28 line py-2 px-2 male">
+					<div class="classname clearfix">
+						<image class="float-left icon-class" src="icon/class/Barbarian.gif">
+						<b>Barbarian</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Axe.webp">
+					</div>											
+					<div class="clearfix">
+						<image src="icon/skills/Despoil.png" data-toggle="tooltip" data-placement="top" title="Lấy một thỏi vàng (S) từ kẻ dịch nếu hạ gục kẻ dịch. Tỉ lệ: Luck%"> Despoil,
+						<image src="icon/skills/Gamble.png" data-toggle="tooltip" data-placement="top" title="Hit rate -5, Critical +10"> Gamble
+					</div>	
+				</div>
+				<div class="mgt22 line py-2 px-2 male">
+					<div class="classname clearfix">
+						<image class="float-left icon-class" src="icon/class/Fighter.gif">
+						<b>Fighter</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Axe.webp">
+					</div>											
+					<div class="clearfix">
+						<image src="icon/skills/HP+5.png" data-toggle="tooltip" data-placement="top" title="Maximum HP +5"> HP +5,
+						<image src="icon/skills/Zeal.png" data-toggle="tooltip" data-placement="top" title="Critical +5"> Zeal
+					</div>	
+				</div>
+				<div class="mgt22 line py-2 px-2">
+					<div class="classname clearfix">
+						<image class="float-left icon-class2" src="icon/class/Mercenary.webp">
+						<b>Mercenary</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Sword.png">
+					</div>											
+					<div class="clearfix">
+						<image src="icon/skills/Armsthrift.png" data-toggle="tooltip" data-placement="top" title="Xài không tốn vũ khí. Tỉ lệ: (Luck*2)%"> Armsthrift,
+						<image src="icon/skills/Patience.webp" data-toggle="tooltip" data-placement="top" title="Hit Rate và Avoid +10 trong lượt kẻ dịch"> Patience
+					</div>
+				</div>
+				<div class="mgt22 line py-2 px-2">
+					<div class="classname clearfix">
+						<image class="float-left icon-class2" src="icon/class/Archer.gif">
+						<b>Archer</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Bow.png">
+					</div>											
+					<div class="clearfix">
+						<image src="icon/skills/Skill+2.png" data-toggle="tooltip" data-placement="top" title="Chỉ số skill +2"> Skill +2,
+						<image src="icon/skills/Prescience.webp" data-toggle="tooltip" data-placement="top" title="Hit rate và Avoid +15 trong lượt người dùng"> Prescience
+					</div>	
+				</div>			
+			</div>
+			<div class="col-sm-2">
+				<image src="characters/arrowupright.png" class="arrow-right mgt60">
+				<image src="characters/arrowdownright.png" class="arrow-right mt-0">
+				<image src="characters/arrowupright.png" class="arrow-right mt-0">
+				<image src="characters/arrowdownright.png" class="arrow-right mt-0">
+				<image src="characters/arrowupright.png" class="arrow-right mt-0">
+				<image src="characters/arrowdownright.png" class="arrow-right mt-0">
+				<image src="characters/arrowupright.png" class="arrow-right mt-0">
+				<image src="characters/arrowdownright.png" class="arrow-right mt-0">
+			</div>
+			<div class="col-sm-5 px-0">	
+				<div class="line py-2 px-2 male">
+					<div class="classname clearfix">
+						<image class="float-left icon-class" src="icon/class/Berserker.gif">
+						<b>Berserker</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Axe.webp">
+					</div>											
+					<div class="clearfix">
+						<image src="icon/skills/Wrath.png" data-toggle="tooltip" data-placement="top" title="Critical +20 khi dưới nửa cây máu"> Wrath,
+						<image src="icon/skills/Axefaire.png" data-toggle="tooltip" data-placement="top" title="Strength +5 khi dùng búa"> Axefaire
+					</div>
+				</div>
+				<div class="line py-2 px-2 mt-5 male">
+					<div class="classname clearfix">
+						<image class="float-left icon-class" src="icon/class/Warrior.gif">
+						<b>Warrior</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Axe.webp">
+						<span class="float-right">&nbsp</span>
+						<image class="float-right icon-weapon" src="icon/weapons/Bow.png">
+					</div>											
+					<div class="clearfix skillname2">
+						<image src="icon/skills/buffstr.png" data-toggle="tooltip" data-placement="top" title="Ra lệnh: Tăng strength +4 cho các đồng minh trong 3 ô"> Rally Strength,
+						<image src="icon/skills/Counter.png" data-toggle="tooltip" data-placement="top" title="Phản lại sát thương bị tấn công bởi kẻ dịch đứng cạnh 1 ô (không phản lại sát thương nếu người dùng bị hạ)"> Counter
+					</div>
+				</div>
+				<div class="line py-2 px-2 mt-5">
+					<div class="classname clearfix">
+						<image class="float-left icon-class" src="icon/class/Hero.webp">
+						<b>Hero</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Axe.webp">
+						<span class="float-right">&nbsp</span>
+						<image class="float-right icon-weapon" src="icon/weapons/Sword.png">
+					</div>											
+					<div class="clearfix">
+						<image src="icon/skills/Sol.png" data-toggle="tooltip" data-placement="top" title="Hồi máu bằng nửa sát thương gây ra cho kẻ dịch"> Sol,
+						<image src="icon/skills/Axebreaker.png" data-toggle="tooltip" data-placement="top" title="Hit rate và Avoid +50 khi kẻ dịch dùng búa"> Axebreaker
+					</div>
+				</div>
+				<div class="line py-2 px-2 mgt22">
+					<div class="classname clearfix">
+						<image class="float-left icon-class" src="icon/class/BowKnight.gif">
+						<b>Bow Knight</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Sword.png">
+						<span class="float-right">&nbsp</span>
+						<image class="float-right icon-weapon" src="icon/weapons/Bow.png">
+					</div>											
+					<div class="clearfix">
+						<image src="icon/skills/Buffskill.png" data-toggle="tooltip" data-placement="top" title="Ra lệnh: Tăng skill +4 cho tất cả các đồng minh trong 3 ô">Rally Skill,
+						<image src="icon/skills/Bowbreaker.png" data-toggle="tooltip" data-placement="top" title="Hit rate và Avoid +50 khi kẻ dịch dùng cung">Bowbreaker
+					</div>
+				</div>
+				<div class="line py-2 px-2 mt-5">
+					<div class="classname clearfix">
+						<image class="float-left icon-class2" src="icon/class/Sniper.gif">
+						<b>Sniper</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Tome.webp">
+						<span class="float-right">&nbsp</span>
+						<image class="float-right icon-weapon" src="icon/weapons/Sword.png">
+					</div>											
+					<div class="clearfix">
+						<image src="icon/skills/HitRate+20.png" data-toggle="tooltip" data-placement="top" title="Hit Rate +20">Hit Rate +20,
+						<image src="icon/skills/Bowfaire.png" data-toggle="tooltip" data-placement="top" title="Strength +5 khi dùng cung">Bowfaire
+					</div>
+				</div>
+			</div>
+		</div><!-- class 5 nhanh -->
+	</div>
+	<div class="col-sm-04"></div>
+	<div class="col-sm-58">
+		<div class="row mt-5">
+			<div class="col-sm-5 line py-2">
+				<div class="classname clearfix">
+					<image class="float-left icon-class" src="icon/class/Tactician.webp">
+					<b>Tactician</b></image>
+					<image class="float-right icon-weapon" src="icon/weapons/Tome.webp">
+					<span class="float-right">&nbsp</span>
+					<image class="float-right icon-weapon" src="icon/weapons/Sword.png">
+				</div>											
+				<div class="clearfix skillname">
+					<image src="icon/skills/veteran.png" data-toggle="tooltip" 
+					data-placement="top" title="x1.5 điểm kinh nghiệm khi Pair up"> Veteran,
+					<image src="icon/skills/solidarity.png" data-toggle="tooltip" 
+					data-placement="top" title="Crit và Critical Avoid +10 cho các đồng minh đứng cạnh (1 ô) "> Solidarity
+				</div>				
+			</div>
+			<div class="col-sm-2">
+				<image src="characters/arrowright.png" class="arrow-right mgt40">
+			</div>
+			<div class="col-sm-5 line py-2">
+				<div class="classname clearfix">
+					<image class="float-left icon-class2" src="icon/class/Grandmaster.gif">
+					<b>Grandmaster</b></image>
+					<image class="float-right icon-weapon" src="icon/weapons/Tome.webp">
+					<span class="float-right">&nbsp</span>
+					<image class="float-right icon-weapon" src="icon/weapons/Sword.png">
+				</div>											
+				<div class="clearfix skillname">
+					<image src="icon/skills/ignis.png" data-toggle="tooltip" 
+					data-placement="top" title="Thêm (Magic/2) điểm Strength nếu gây dame vật lý hoặc và (Strength/2) điểm Magic nếu gây dame phép. Tỉ lệ: Skill%"> Ignis,
+					<image src="icon/skills/buffall.png" data-toggle="tooltip" 
+					data-placement="top" title="Ra Lệnh: Tăng tất chỉ số (trừ movement) +4 cho các đồng minh trong 3 ô"> Rally Spectrum
+				</div>
+			</div>
+		</div><!-- class Tactician -->
+		<div class="row mt-5">
+			<div class="col-sm-5 px-0">
+				<div class="mgt28 line py-2 px-2">
+					<div class="classname clearfix">
+						<image class="float-left icon-class" src="icon/class/WyvernRider.gif">
+						<b>Wyvern Rider</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Axe.webp">
+					</div>											
+					<div class="clearfix skillname">
+						<image src="icon/skills/Strength+2.png" data-toggle="tooltip" data-placement="top" title="Chỉ số strength +2"> Strength +2,
+						<image src="icon/skills/Tantivy.png" data-toggle="tooltip" data-placement="top" title="Hit rate và Avoid +10 khi không có đồng minh trong 3 ô"> Tantivy
+					</div>	
+				</div>			
+			</div>
+			<div class="col-sm-2">
+				<image src="characters/arrowupright.png" class="arrow-right mgt60">
+				<image src="characters/arrowdownright.png" class="arrow-right mt-0">
+			</div>
+			<div class="col-sm-5 px-0">	
+				<div class="line py-2 px-2">
+					<div class="classname clearfix">
+						<image class="float-left icon-class" src="icon/class/GriffonRider.gif">
+						<b>Griffon Rider</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Axe.webp">
+					</div>											
+					<div class="clearfix skillname2">
+						<image src="icon/skills/Deliverer.png"  data-toggle="tooltip" data-placement="top" title="Movement +2 khi Pair Up"> Deliverer,
+						<image src="icon/skills/Lancebreaker.png"  data-toggle="tooltip" data-placement="top" title="Hit rate và Avoid +50 khi kẻ dịch dùng giáo"> Lancebreaker
+					</div>
+				</div>
+				<div class="line py-2 px-2 mt-5">
+					<div class="classname clearfix">
+						<image class="float-left icon-class" src="icon/class/WyvernLord.gif">
+						<b>Wyvern Lord</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Lance.png">
+						<span class="float-right">&nbsp</span>
+						<image class="float-right icon-weapon" src="icon/weapons/Axe.webp">
+					</div>											
+					<div class="clearfix skillname2">
+						<image src="icon/skills/Quickburn.png"  data-toggle="tooltip" data-placement="top" title="Hit rate và Avoid +15 khi bắt đầu chapter, hiệu ứng giảm 1 mỗi lượt."> Quickburn,
+						<image src="icon/skills/Swordbreaker.png" data-toggle="tooltip" data-placement="top" title="Hit rate và Avoid +50 khi kẻ địch dùng kiếm"> Swordbreaker
+					</div>
+				</div>
+			</div>
+		</div><!-- class wyvern Rider-->
+		<div class="row mt-5">
+			<div class="col-sm-5 px-0">
+				<div class="mgt28 line py-2 px-2">
+					<div class="classname clearfix">
+						<image class="float-left icon-class2" src="icon/class/Thief.gif">
+						<b>Thief</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Sword.png">
+					</div>											
+					<div class="clearfix skillname2">
+						<image src="icon/skills/Locktouch.png" data-toggle="tooltip" data-placement="top" title="Mở tất cả khóa (không cần chìa khóa)"> Locktouch,
+						<image src="icon/skills/Movement+1.png" data-toggle="tooltip" data-placement="top" title="Chỉ số movement +1"> Movement +1
+					</div>	
+				</div>
+				<div class="mgt22 line py-2 px-2">
+					<div class="classname clearfix">
+						<image class="float-left icon-class" src="icon/class/Myrmidon.gif">
+						<b>Myrmidon</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Sword.png">
+					</div>											
+					<div class="clearfix">
+						<image src="icon/skills/Avoid+10.png" data-toggle="tooltip" data-placement="top" title="Avoid +10"> Avoid +10,
+						<image src="icon/skills/Vantage.png" data-toggle="tooltip" data-placement="top" title="Luôn đánh trước khi dưới nửa cây máu"> Vantage
+					</div>	
+				</div>			
+			</div>
+			<div class="col-sm-2">
+				<image src="characters/arrowupright.png" class="arrow-right mgt60">
+				<image src="characters/arrowdownright.png" class="arrow-right mt-0">
+				<image src="characters/arrowupright.png" class="arrow-right mt-0">
+				<image src="characters/arrowdownright.png" class="arrow-right mt-0">
+			</div>
+			<div class="col-sm-5 px-0">	
+				<div class="line py-2 px-2">
+					<div class="classname clearfix">
+						<image class="float-left icon-class" src="icon/class/Trickster.gif">
+						<b>Trickster</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Staff.png">
+						<span class="float-right">&nbsp</span>
+						<image class="float-right icon-weapon" src="icon/weapons/Sword.png">
+					</div>											
+					<div class="clearfix">
+						<image src="icon/skills/Lucky_7.png" data-toggle="tooltip" data-placement="top" title="Hit rate và Avoid +20 trong 7 lượt đầu tiên của map"> Lucky Seven,
+						<image src="icon/skills/Acrobat.png" data-toggle="tooltip" data-placement="top" title="Di chuyển trên địa hình (ví dụ: sông, núi...)"> Acrobat
+					</div>
+				</div>
+				<div class="line py-2 px-2 mt-5">
+					<div class="classname clearfix">
+						<image class="float-left icon-class" src="icon/class/Assassin.gif">
+						<b>Assassin</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Bow.png">
+						<span class="float-right">&nbsp</span>
+						<image class="float-right icon-weapon" src="icon/weapons/Sword.png">
+					</div>											
+					<div class="clearfix">
+						<image src="icon/skills/Lethality.png" data-toggle="tooltip" data-placement="top" title="1 phát chết luôn. Tỉ lệ: (Skill/4)%"> Lethality,
+						<image src="icon/skills/Pass.png" data-toggle="tooltip" data-placement="top" title="Chạy xuyên qua kẻ địch"> Pass
+					</div>
+				</div>
+				<div class="line py-2 px-2 mt-5">
+					<div class="classname clearfix">
+						<image class="float-left icon-class" src="icon/class/Swordmaster.gif">
+						<b>Swordmaster</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Sword.png">
+					</div>											
+					<div class="clearfix">
+						<image src="icon/skills/Astra.png" data-toggle="tooltip" data-placement="top" title="Đánh 5 lần liên tiếp với nửa sát thương mỗi lần. Tỉ lệ: (Skill/2)%"> Astra,
+						<image src="icon/skills/Swordfaire.png" data-toggle="tooltip" data-placement="top" title="Strength +5 khi dùng kiếm"> Swordfaire
+					</div>
+				</div>
+			</div>
+		</div><!-- class 3 nhanh -->
+		<div class="row mt-5">
+			<div class="col-sm-5 px-0">
+				<div class="mgt28 line py-2 px-2">
+					<div class="classname clearfix">
+						<image class="float-left icon-class2" src="icon/class/DarkMage.gif">
+						<b>Dark Mage</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Tome.webp">
+					</div>											
+					<div class="clearfix">
+						<image src="icon/skills/Hex.webp" data-toggle="tooltip" data-placement="top" title="Avoid -15 cho những kẻ dịch đứng cạnh (1 ô)"> Hex,
+						<image src="icon/skills/Anathema.png" data-toggle="tooltip" data-placement="top" title="Avoid và Critical Avoid -10 cho những kẻ dịch đứng trong vòng 3 ô"> Anathema
+					</div>
+				</div>
+				<div class="mgt22 line py-2 px-2">
+					<div class="classname clearfix">
+						<image class="float-left icon-class" src="icon/class/Mage.gif">
+						<b>Mage</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Tome.webp">
+					</div>											
+					<div class="clearfix">
+						<image src="icon/skills/Magic+2.png" data-toggle="tooltip" data-placement="top" title="Chỉ số Magic +2"> Magic +2,
+						<image src="icon/skills/Focus.png" data-toggle="tooltip" data-placement="top" title="Critical +10 khi không có đồng minh trong vòng 3 ô"> Focus
+					</div>	
+				</div>
+				<div class="mgt22 line py-2 px-2">
+					<div class="classname clearfix">
+						<image class="float-left icon-class2" src="icon/class/Cleric.gif">
+						<image class="float-left icon-class2" src="icon/class/Priest.gif">
+						<b>Cleric/Priest</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Staff.png">
+					</div>											
+					<div class="clearfix">
+						<image src="icon/skills/Miracle.png" data-toggle="tooltip" data-placement="top" title="Sống sót với 1 HP khi nhận đòn chí mạng (Phải có 2 HP trở lên mới kích hoạt). Tỉ lệ: Luck%"> Miracle,
+						<image src="icon/skills/Healtouch.png" data-toggle="tooltip" data-placement="top" title="Hồi thêm 5 máu khi hồi máu cho đồng đội"> Healtouch
+					</div>	
+				</div>
+				<div class="mgt22 line py-2 px-2 female">
+					<div class="classname clearfix">
+						<image class="float-left icon-class" src="icon/class/Troubadour.gif">
+						<b>Troubadour</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Staff.png">
+					</div>											
+					<div class="clearfix skillname2">
+						<image src="icon/skills/Resistance+2.png" data-toggle="tooltip" data-placement="top" title="Chỉ số res +2"> Resistance +2,
+						<image src="icon/skills/Demoiselle.png" data-toggle="tooltip" data-placement="top" title="Avoid và Critical Avoid +10 cho các đồng minh Khác giới trong 3 ô"> Demoiselle
+					</div>	
+				</div>			
+			</div>
+			<div class="col-sm-2">
+				<image src="characters/arrowupright.png" class="arrow-right mgt60">
+				<image src="characters/arrowdownright.png" class="arrow-right mt-0">
+				<image src="characters/arrowupright.png" class="arrow-right mt-0">
+				<image src="characters/arrowdownright.png" class="arrow-right mt-0">
+				<image src="characters/arrowupright.png" class="arrow-right mt-0">
+				<image src="characters/arrowdownright.png" class="arrow-right mt-0">
+				<image src="characters/arrowupright.png" class="arrow-right mt-0">
+				<image src="characters/arrowdownright.png" class="arrow-right mt-0">
+			</div>
+			<div class="col-sm-5 px-0">	
+				<div class="line py-2 px-2">
+					<div class="classname clearfix">
+						<image class="float-left icon-class2" src="icon/class/Sorcerer.gif">
+						<b>Sorcerer</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Tome.webp">
+					</div>											
+					<div class="clearfix skillname2">
+						<image src="icon/skills/Vengeance.png" data-toggle="tooltip" data-placement="top" title="Tăng thêm sát thương bằng nửa số máu bị mất của người sử dụng.Tỉ lệ: (Skill*2)%"> Vengeance,
+						<image src="icon/skills/Tomebreaker.webp" data-toggle="tooltip" data-placement="top" title="Hit rate và Avoid +50 khi kẻ dịch dùng phép"> Tomebreaker
+					</div>
+				</div>
+				<div class="line py-2 px-2 mt-5">
+					<div class="classname clearfix">
+						<image class="float-left icon-class" src="icon/class/DarkKnight.gif">
+						<b>Dark Knight</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Tome.webp">
+						<span class="float-right">&nbsp</span>
+						<image class="float-right icon-weapon" src="icon/weapons/Sword.png">
+					</div>											
+					<div class="clearfix">
+						<image src="icon/skills/Slowburn.png" data-toggle="tooltip" data-placement="top" title="Hit rate và Avoid tăng 1 mỗi lượt cho đến lượt thứ 15"> Slow Burn,
+						<image src="icon/skills/Lifetaker.png" data-toggle="tooltip" data-placement="top" title="Hồi 50% máu khi hạ gục kẻ địch trong lượt người chơi"> Lifetaker
+					</div>
+				</div>
+				<div class="line py-2 px-2 mt-5">
+					<div class="classname clearfix">
+						<image class="float-left icon-class2" src="icon/class/Sage.gif">
+						<b>Sage</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Tome.webp">
+						<span class="float-right">&nbsp</span>
+						<image class="float-right icon-weapon" src="icon/weapons/Staff.png">
+					</div>											
+					<div class="clearfix skillname2">
+						<image src="icon/skills/buffmagic.png" data-toggle="tooltip" data-placement="top" title="Ra lệnh: Tăng Magic +4 cho các đồng minh trong 3 ô"> Rally Magic,
+						<image src="icon/skills/Tomefaire.webp" data-toggle="tooltip" data-placement="top" title="Magic +5 khi dùng phép"> Tomefaire
+					</div>
+				</div>
+				<div class="line py-2 px-2 mgt22">
+					<div class="classname clearfix">
+						<image class="float-left icon-class2" src="icon/class/WarCleric.webp">
+						<b>War Cleric</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Axe.webp">
+						<span class="float-right">&nbsp</span>
+						<image class="float-right icon-weapon" src="icon/weapons/Staff.png">
+					</div>											
+					<div class="clearfix">
+						<image src="icon/skills/buffluck.png" data-toggle="tooltip" data-placement="top" title="Ra lệnh: Tăng Luck +8 cho các đồng minh trong 3 ô"> Rally Luck,
+						<image src="icon/skills/Renewal.png" data-toggle="tooltip" data-placement="top" title="Hồi 30% máu khi bắt đầu turn của người chơi"> Renewal
+					</div>
+				</div>
+				<div class="line py-2 px-2 mt-5 female">
+					<div class="classname clearfix">
+						<image class="float-left icon-class" src="icon/class/Valkyrie.gif">
+						<b>Valkyrie</b></image>
+						<image class="float-right icon-weapon" src="icon/weapons/Tome.webp">
+						<span class="float-right">&nbsp</span>
+						<image class="float-right icon-weapon" src="icon/weapons/Staff.png">
+					</div>											
+					<div class="clearfix skillname2">
+						<image src="icon/skills/buffres.png" data-toggle="tooltip" data-placement="top" title="Ra lệnh: Tăng Res +4 cho các đồng minh trong 3 ô"> Rally Resistance,
+						<image src="icon/skills/DualSupport+.png" data-toggle="tooltip" data-placement="top" title="Tăng tỉ lệ hỗ trợ khi đánh đôi lên 4 bậc"> Dual Support+
+					</div>
+				</div>
+			</div>
+		</div><!-- class 5 nhanh -->
+	</div>
+	</div>
+	</div>
+</body>
+</html>
